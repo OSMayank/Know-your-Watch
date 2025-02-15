@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Watch Brands & Models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-attachment: fixed;
+            background-color: #ddd;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        .brand {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+            transition: 0.5s;
+        }
+        .brand:hover {
+            box-shadow: 0 0 25px rgba(255, 19, 19, 0.3);
+            width: 31%;
+            height: 31%;
+        }
+        h2 {
+            color: #333;
+        }
+        .brand img {
+            max-width: 150px;
+            display: block;
+            margin: 10px auto;
+        }
+        .watch-list {
+            list-style: none;
+            padding: 0;
+        }
+        .watch-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .watch-image {
+            max-width: 100px;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Know Your Watch</h1>
+    </header>
+    <nav>
+        <a href="https://www.rolex.com/en-us" target="_blank">Rolex</a>
+        <a href="https://www.omegawatches.com/en-us/" target="_blank">Omega</a>
+        <a href="https://www.seikowatches.com/us-en" target="_blank">Seiko</a>
+        <a href="https://www.casio.com/" target="_blank">Casio</a>
+        <a href="https://www.patek.com/en/home" target="_blank">Patek Philippe</a>
+        <a href="https://www.audemarspiguet.com/com/en/home.html" target="_blank">Audemars Piguet</a>
+        <a href="https://www.longines.com/en-us/" target="_blank">Longines</a>
+        <a href="https://www.tissotwatches.com/en-us" target="_blank">Tissot</a>
+        <a href="https://www.chrono24.com/tudor/index.htm" target="_blank">Tudor</a>
+    </nav>
+    <div class="container">
+        <div class="brand" id="rolex">
+            <img src="rolex-logo.png" alt="Rolex Logo">
+            <h2>Rolex</h2>
+            <ul class="watch-list">
+                <li>Dayjust <img class="watch-image" src="datejust.jpg" alt="Rolex Dayjust"></li>
+                <li>Submariner <img class="watch-image" src="Submariner.jpg" alt="Rolex Submariner"></li>
+            </ul>
+        </div>
+        <div class="brand" id="omega">
+            <img src="omega.svg" alt="Omega Logo">
+            <h2>Omega</h2>
+            <ul class="watch-list">
+                <li>Speedmaster <img class="watch-image" src="speedmaster.webp" alt="Omega Speedmaster"></li>
+                <li>Calatrava <img class="watch-image" src="Seamaster.jpg" alt="Omega Seastar"></li>
+            </ul>
+        </div>
+        <div class="brand" id="seiko">
+            <img src="seiko.svg" alt="seiko Logo">
+            <h2>Seiko</h2>
+            <ul class="watch-list">
+                <li>Prospex <img class="watch-image" src="prospex.jpg" alt="Seiko Prospex" width="300" height="200"></li>
+                <li>Presage <img class="watch-image" src="presage.jpg" alt="Seiko Presage" width="300" height="200"></li>
+            </ul>
+        </div>
+        <div class="brand" id="casio">
+            <img src="Casio-Logo.webp" alt="casio Logo">
+            <h2>Casio</h2>
+            <ul class="watch-list">
+                <li>G-Shock <img class="watch-image" src="G-SHOCK.jpg" alt="Casio G-Shock"></li>
+                <li>Edifice <img class="watch-image" src="Edifice.jpg" alt="Casio Edifice"></li>
+            </ul>
+        </div>
+        
+        <div class="brand" id="patek">
+            <img src="patek logo.webp" alt="Patek Philippe Logo">
+            <h2>Patek Philippe</h2>
+            <ul class="watch-list">
+                <li>Nautilus <img class="watch-image" src="nautilus.jpg" alt="Patek Nautilus"></li>
+                <li>Calatrava <img class="watch-image" src="calatrava.jpg" alt="Patek Calatrava"></li>
+            </ul>
+        </div>
+        <div class="brand" id="audemars">
+            <img src="Audemars_Piguet.webp" alt="Audemars Piguet Logo">
+            <h2>Audemars Piguet</h2>
+            <ul class="watch-list">
+                <li>Royal Oak <img class="watch-image" src="royal oak.jpg" alt="Royal Oak" height="180"></li>
+                <li>Code 11.59 <img class="watch-image" src="code 11.59.jpg" alt="Code 11.59" height="180"></li>
+            </ul>
+        </div>
+        <div class="brand" id="longines">
+            <img src="longines-logo.png" alt="Longines Logo">
+            <h2>Longines</h2>
+            <ul class="watch-list">
+                <li>Master Collection <img class="watch-image" src="Master Collection.jpg" alt="Master Collection"></li>
+                <li>HydroConquest <img class="watch-image" src="hydroconquest.jpg" alt="HydroConquest"></li>
+            </ul>
+        </div>
+        <div class="brand" id="tissot">
+            <img src="tissot-logo.png" alt="Tissot Logo">
+            <h2>Tissot</h2>
+            <ul class="watch-list">
+                <li>PRX <img class="watch-image" src="PRX.jpg" alt="Tissot PRX"></li>
+                <li>Seastar <img class="watch-image" src="seastar1.jpg" alt="Tissot Seastar"></li>
+            </ul>
+        </div>
+        <div class="brand" id="Tudor">
+            <img src="Tudor-Logo.png" alt="Tudor Logo">
+            <h2>Tudor</h2>
+            <ul class="watch-list">
+                <li> Palagose<img class="watch-image" src="Palagose.jpg" alt="Todor Palagose"></li>
+                <li>Black Bay <img class="watch-image" src="Black Bay.jpg" alt="Tudor Black Bay"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
